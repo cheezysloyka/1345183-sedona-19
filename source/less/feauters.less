@@ -1,7 +1,7 @@
 .feauters__list {
   width: 320px;
   margin: 0 auto;
-  color: #000000;
+  color: @color-black;
   /* Временно для сетки */
   min-height: 50px;
 }
@@ -13,6 +13,10 @@
     width: auto;
     margin: 0;
   }
+
+  .feauters__item {
+    width: 256px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -22,4 +26,27 @@
     width: auto;
     margin: 0;
   }
+
+  .feauters__item {
+    width: 400px;
+  }
+}
+
+.feauters__item {
+  width: 320px;
+}
+
+.feauters__title {
+  text-transform: uppercase;
+  font-family: @font-1;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.feauters__item p {
+  text-transform: uppercase;
+  font-family: @font-1;
+  font-size: 14px;
+  line-height: 21px;
 }

@@ -1,6 +1,41 @@
-.social__title {
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: auto;
+    margin: 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__hashtag b {
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-1;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -8,7 +43,7 @@
 
 .copyright__text {
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-1;
   font-size: 14px;
   line-height: 26px;
 }

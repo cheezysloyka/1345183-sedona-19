@@ -1,0 +1,42 @@
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+.reviews__list {
+  width: 280px;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: auto;
+    margin: 0;
+  }
+
+  .reviews__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: auto;
+    margin: 0;
+  }
+
+  .reviews__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -3,28 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
 
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/282x284" alt="Седона">
-      </a>
-
       <nav class="main-nav">
-
-        <button class="main-nav__cross" type="button">Закрыть меню</button>
 
         <div class="main-nav__wrapper">
 
+          <button class="main-nav__cross" type="button">Закрыть меню</button>
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a href="form.html">Форма отзыва</a>
@@ -34,6 +32,9 @@
           </li>
         </ul>
 
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Седона">
+        </a>
       </div>
 
       </nav>
@@ -41,17 +42,26 @@
     </header>
 
     <main class="page-main">
+      <div class="page-main__wrapper">
 
-      <h1>Фото и видео</h1>
+        <section class="intro"></section>
+
+        <div class="page-title">
+
+          <div class="page-title__wrapper">
+            <h1>Фото и видео</h1>
 
       <h2>Не можете решиться на путешествие из-за курса?
         Фотографии помогут Вам забыть о политике и экономике</h2>
+      </div>
+
+      </div>
 
         <section class="reviews">
 
           <div class="reviews__list">
 
-            <div class="reviews__item">
+            <div class="reviews__item reviews__item--special">
             <p class="reviews__author-picture">
               <img class="reviews__author-image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Фото Бориса">
             </p>
@@ -99,8 +109,11 @@
       <footer class="page-footer">
       <div class="page-footer__wrapper">
 
+        <div class="page-footer__hashtag">
+          <b>#visitsedona</b>
+        </div>
+
         <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
@@ -119,7 +132,8 @@
         </div>
       </div>
     </footer>
-  </main>
+  </div>
+</main>
 
   </body>
 </html>

@@ -1,15 +1,51 @@
-.main-nav__list {
-  list-style: none;
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+  background: @color-white;
 }
 
 .main-nav a {
   background: #81b3d2;
   list-style: none;
-  color: #ffffff;
+  color: @color-white;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: @font-1;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    /* Временно для сетки */
+    min-height: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+  }
 }

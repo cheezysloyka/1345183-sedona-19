@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
 
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/282x284" alt="Седона">
-      </a>
-
       <nav class="main-nav">
 
-        <button class="main-nav__cross" type="button">Закрыть меню</button>
-
         <div class="main-nav__wrapper">
+
+          <button class="main-nav__cross" type="button">Закрыть меню</button>
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -34,6 +32,9 @@
           </li>
         </ul>
 
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" alt="Седона">
+        </a>
       </div>
 
       </nav>
@@ -42,9 +43,19 @@
 
     <main class="page-main">
 
-      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <div class="page-main__wrapper">
+
+        <section class="intro"></section>
+
+        <div class="page-title">
+
+          <div class="page-title__wrapper">
+          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 
       <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+      </div>
+
+      </div>
 
       <section class="advantages">
 
@@ -111,8 +122,11 @@
       <footer class="page-footer">
       <div class="page-footer__wrapper">
 
+        <div class="page-footer__hashtag">
+          <b>#visitsedona</b>
+        </div>
+
         <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
@@ -132,7 +146,8 @@
       </div>
     </footer>
 
-    </main>
+    </div>
+  </main>
 
   </body>
 </html>

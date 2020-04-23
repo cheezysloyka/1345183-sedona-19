@@ -1,4 +1,29 @@
-.reviews__text {
+.reviews__item p {
+  margin: 0;
+}
+
+.reviews__picture {
+  width: 280px;
+  height: 280px;
+}
+
+.reviews__item:nth-child(1) .reviews__picture {
+  background: url("../img/photo-sunset-mobile@1x.jpg") no-repeat;
+}
+
+.reviews__item:nth-child(2) .reviews__picture {
+  background: url("../img/photo-cactus-mobile@1x.jpg") no-repeat;
+}
+
+.reviews__item:nth-child(3) .reviews__picture {
+  background: url("../img/photo-roads-mobile@1x.jpg") no-repeat;
+}
+
+.reviews__item:nth-child(4) .reviews__picture {
+  background: url("../img/main-bridge-mobile@1x.jpg") no-repeat;
+}
+
+.reviews__picture-name {
   text-transform: uppercase;
   font-family: @font-1;
   font-size: 14px;
@@ -18,20 +43,95 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
+  padding-left: 37px;
 }
 
 @media (min-width: @tablet-width) {
+  .reviews__item {
+    width: 324px;
+    background: #f2f2f2;
+  }
+
+  .reviews__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .reviews__item .reviews__picture {
+    width: 324px;
+    height: 267px;
+  }
+
   .reviews__item--special {
     width: 648px;
-    /* Временно для сетки */
-    min-height: 50px;
+  }
+
+  .reviews__item:nth-child(1) .reviews__picture {
+    width: 648px;
+    height: 400px;
+    background: url("../img/photo-sunset-tablet@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(2) .reviews__picture {
+    background: url("../img/photo-cactus-tablet@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(3) .reviews__picture {
+    background: url("../img/photo-roads-tablet@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(4) .reviews__picture {
+    background: url("../img/photo-bridge-tablet@1x.jpg") no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .reviews__item {
+    position: relative;
+    width: 400px;
+    height: 267px;
+  }
+
+  .reviews__text {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: @color-white;
+  }
+
+  .reviews__likes path {
+    fill: #ffffff;
+  }
+
+  .reviews__item .reviews__picture {
+    width: 400px;
+    height: 267px;
+  }
+
   .reviews__item--special {
-    width: 1200px;
-    /* Временно для сетки */
-    min-height: 50px;
+    width: @desktop-width;
+    height: 400px;
+  }
+
+  .reviews__item:nth-child(1) .reviews__picture {
+    width: @desktop-width;
+    height: 400px;
+    background: url("../img/photo-sunset-desktop@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(2) .reviews__picture {
+    background: url("../img/photo-cactus-desktop@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(3) .reviews__picture {
+    background: url("../img/photo-roads-desktop@1x.jpg") no-repeat;
+  }
+
+  .reviews__item:nth-child(4) .reviews__picture {
+    background: url("../img/photo-bridge-desktop@1x.jpg") no-repeat;
   }
 }

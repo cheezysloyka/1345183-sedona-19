@@ -1,26 +1,4 @@
-.page-title h1 {
-  display: inline-block;
-  color: @color-black;
-  text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.page-title h2 {
-  color: @color-black;
-  text-transform: uppercase;
-  font-family: @font-1;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-  margin: 0;
-}
-
 .page-title {
-  width: 320px;
   margin: 0 auto;
   background: @color-white;
   text-align: center;
@@ -28,6 +6,34 @@
 
 .page-title__wrapper {
   width: 280px;
+  margin: 0 auto;
+}
+
+.page-title__slogan,
+.page-title__slogan--photo {
+  display: block;
+  color: @color-black;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: @font-1;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.page-title__intro {
+  color: @color-black;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: @font-1;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,6 +46,24 @@
     width: 648px;
     margin: 0 auto;
   }
+
+  .page-title__slogan {
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-title__slogan--photo {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .page-title__intro {
+    margin-bottom: 53px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -51,5 +75,12 @@
   .page-title__wrapper {
     width: 800px;
     margin: 0 auto;
+  }
+
+  .page-title__slogan--photo {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }

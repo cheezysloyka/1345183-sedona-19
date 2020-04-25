@@ -15,22 +15,22 @@
 
         <div class="main-nav__wrapper">
 
-        <ul class="main-nav__list site-list main-nav--opened">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
+          <ul class="main-nav__list site-list main-nav--opened">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
 
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        </ul>
 
         <div class="main-nav__logo">
           <a href="index.html">
@@ -227,15 +227,19 @@
           <div class="reviews__list">
 
             <div class="reviews__item reviews__item--special">
-            <p class="reviews__picture">
-            </p>
+              <picture>
+                <source srcset="img/photo-sunset-mobile@1x.jpg" media="(max-width: 767px)">
+                  <source srcset="img/photo-sunset-tablet@1x.jpg" media="(min-width: 768px)">
+                    <source srcset="img/photo-sunset-desktop@1x.jpg" media="(min-width: 1200px)">
+                  <img src="img/photo-sunset-desktop@1x.jpg" alt="фото Неродные просторы">
+                </picture>
 
             <div class="reviews__text">
               <div class="reviews__text--wrapper">
                 <p class="reviews__picture-name">Неродные просторы</p>
             <p class="reviews__author-name">Автор фото: Борис</p>
           </div>
-            <p class="reviews__likes">
+            <button class="reviews__likes">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                 <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -245,20 +249,24 @@
                   </g>
                 </g>
               </svg>
-              1350</p>
+              1350</button>
             </div>
           </div>
 
           <div class="reviews__item">
-          <p class="reviews__picture">
-          </p>
+            <picture>
+              <source srcset="img/photo-cactus-mobile@1x.jpg" media="(max-width: 767px)">
+                <source srcset="img/photo-cactus-tablet@1x.jpg" media="(min-width: 768px)">
+                  <source srcset="img/photo-cactus-desktop@1x.jpg" media="(min-width: 1200px)">
+                <img src="img/photo-cactus-desktop@1x.jpg" alt="фото Неродные просторы">
+              </picture>
 
           <div class="reviews__text">
             <div class="reviews__text--wrapper">
               <p class="reviews__picture-name">Местная растительность</p>
           <p class="reviews__author-name">Автор фото: Сергей</p>
           </div>
-          <p class="reviews__likes">
+          <button class="reviews__likes">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
               <g id="Page-1">
                 <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -268,19 +276,24 @@
                 </g>
               </g>
             </svg>
-            143</p>
+            143</button>
           </div>
         </div>
 
         <div class="reviews__item">
-        <p class="reviews__picture"></p>
+          <picture>
+            <source srcset="img/photo-roads-mobile@1x.jpg" media="(max-width: 767px)">
+              <source srcset="img/photo-roads-tablet@1x.jpg" media="(min-width: 768px)">
+                <source srcset="img/photo-roads-desktop@1x.jpg" media="(min-width: 1200px)">
+              <img src="img/photo-roads-desktop@1x.jpg" alt="фото Неродные просторы">
+            </picture>
 
         <div class="reviews__text">
           <div class="reviews__text--wrapper">
             <p class="reviews__picture-name">Дорога на Север</p>
         <p class="reviews__author-name">Автор фото: Петр</p>
         </div>
-        <p class="reviews__likes">
+        <button class="reviews__likes">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
             <g id="Page-1">
               <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -290,18 +303,23 @@
               </g>
             </g>
           </svg>
-          96</p>
+          96</button>
         </div>
       </div>
 
       <div class="reviews__item">
-      <p class="reviews__picture"></p>
+        <picture>
+          <source srcset="img/photo-bridge-mobile@1x.jpg" media="(max-width: 767px)">
+            <source srcset="img/photo-bridge-tablet@1x.jpg" media="(min-width: 768px)">
+              <source srcset="img/photo-bridge-desktop@1x.jpg" media="(min-width: 1200px)">
+            <img src="img/photo-bridge-desktop@1x.jpg" alt="фото Неродные просторы">
+          </picture>
       <div class="reviews__text">
         <div class="reviews__text--wrapper">
           <p class="reviews__picture-name">Мост Дьявола</p>
       <p class="reviews__author-name">Автор фото: Антон</p>
       </div>
-      <p class="reviews__likes">
+      <button class="reviews__likes">
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
           <g id="Page-1">
             <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -311,7 +329,7 @@
             </g>
           </g>
         </svg>
-        254</p>
+        254</button>
       </div>
     </div>
 

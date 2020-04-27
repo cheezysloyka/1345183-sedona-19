@@ -1,17 +1,46 @@
 .intro {
+  display: flex;
+  flex-direction: column;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: 720px auto;
-  /* Временно для сетки */
-  min-height: 390px;
+  height: 389px;
+  margin: 0 auto;
 }
 
+.intro__text {
+  height: 214px;
+  text-align: center;
+}
+
+.intro img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 282px;
+  height: 214px;
+}
 
 @media (min-width: @tablet-width) {
   .intro {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
     background-size: 1178px auto;
-    /* Временно для сетки */
-    min-height: 520px;
+
+    height: 518px;
+  }
+
+  .intro__text {
+    order: 2;
+
+    width: 100%;
+    height: 518px;
+  }
+
+  .intro img {
+    display: block;
+    width: 460px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 77px;
   }
 }
 
@@ -19,8 +48,20 @@
 @media (min-width: @desktop-width) {
   .intro {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    background-size: 1391px auto;
-    /* Временно для сетки */
-    min-height: 520px;
+    background-size: cover;
+    background-position: center 0;
+
+    height: 518px;
+  }
+
+  .intro__text {
+    order: 2;
+
+    width: 100%;
+    height: 518px;
+  }
+
+  .intro img {
+    margin-top: 77px;
   }
 }

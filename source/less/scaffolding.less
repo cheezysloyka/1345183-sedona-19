@@ -8,12 +8,19 @@ body {
   font-family: @font-1;
   color: @color-black;
   font-style: normal;
-
-  background-color: @color-white;
 }
 
 @media (min-width: @desktop-width) {
-  width: @desktop-width;
+  body {
+    width: 1280px;
+    background: #f2f2f2;
+    margin: 0 auto;
+  }
+
+  .body__wrapper {
+    width: 1200px;
+    background: @color-white;
+  }
 }
 
 img {

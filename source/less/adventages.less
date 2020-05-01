@@ -82,10 +82,32 @@
   .advantages__img--city {
     background: url("../img/main-city-tablet@1x.jpg") no-repeat;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/main-city-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .advantages__img--bridge {
     background: url("../img/main-bridge-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/main-bridge-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .advantages__img--city {
+    background: url("../img/main-city-tablet@2x.jpg");
+    background-size: cover;
+  }
+
+  .advantages__img--bridge {
+    background: url("../img/main-bridge-tablet@2x.jpg");
     background-size: cover;
   }
 }

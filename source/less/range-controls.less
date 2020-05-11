@@ -1,0 +1,56 @@
+.range-volume {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.range-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 46px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.range-controls .scale {
+  display: flex;
+  align-items: center;
+  width: 235px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.range-controls .bar {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .range-volume {
+    width: 390px;
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    transform: translateX(-50%);
+  }
+
+  .range-controls {
+    background: none;
+  }
+
+  .range-controls .scale {
+    width: 390px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-volume {
+    width: 540px;
+  }
+
+  .range-controls .scale {
+    width: 540px;
+  }
+}

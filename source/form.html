@@ -98,15 +98,15 @@
           </div>
 
           <div class="user-rewiew__form">
-            <b>Представьтесь</b>
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="user-rewiew__modal-login">
+                <b>Представьтесь</b>
                 <p>
-                  <label for="user-rewiew__name">Имя:</label>
+                  <label for="user-rewiew__name">Имя*:</label>
                   <input id="user-rewiew__name" type="text" name="Имя" value="Петр">
                 </p>
                 <p>
-                  <label for="user-rewiew__surname">Фамилия:</label>
+                  <label for="user-rewiew__surname">Фамилия*:</label>
                   <input id="user-rewiew__surname" type="text" name="Фамилия" value="Иванов">
                 </p>
                 <p>
@@ -115,8 +115,31 @@
                 </p>
               </div>
 
+              <fieldset class="user-rewiew__impression">
+                <legend>Ваше общее впечатление:</legend>
+                <ul>
+                  <li>
+                    <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Скорее положительное"
+                    id="positive-impression" checked>
+                    <label for="positive-impression">Скорее положительное</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Скорее отрицательное"
+                    id="negative-impression">
+                    <label for="negative-impression">Скорее отрицательное</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Затрудняюсь ответить"
+                    id="neutral-impression">
+                    <label for="neutral-impression">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+
                 <div class="user-rewiew__contacts">
-                  <p>
+                  <b>Контактная информация:</b>
+                  <div class="user-rewiew__contacts-text">
+                    <p>
                   <label for="user-rewiew__tel">Контактный телефон*:</label>
                   <input id="user-rewiew__tel" type="tel" name="телефон" value="" placeholder="Введите телефон">
                 </p>
@@ -124,33 +147,13 @@
                 <label for="user-rewiew__email">Электронная почта*:</label>
                 <input id="user-rewiew__email" type="email" name="email" value="" placeholder="Введите email">
               </p>
+            </div>
               </div>
-
-
-                <fieldset class="user-rewiew__impression">
-                  <legend>Ваше общее впечатление:</legend>
-                  <ul>
-                    <li>
-                      <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Скорее положительное"
-                      id="positive-impression" checked>
-                      <label for="positive-impression">Скорее положительное</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Скорее отрицательное"
-                      id="negative-impression">
-                      <label for="negative-impression">Скорее отрицательное</label>
-                    </li>
-                    <li>
-                      <input class="visually-hidden user-rewiew__input user-rewiew__input--radio" type="radio" name="Общее впечатление" value="Затрудняюсь ответить"
-                      id="neutral-impression">
-                      <label for="neutral-impression">Затрудняюсь ответить</label>
-                    </li>
-                  </ul>
-                </fieldset>
 
                 <fieldset class="user-rewiew__attractions">
                   <legend>Посещенные достопримечательности:</legend>
-                  <ul>
+                  <div class="user-rewiew__columns">
+                    <ul>
                     <li>
                       <input class="visually-hidden user-rewiew__input user-rewiew__input--checkbox" type="checkbox" name="Мост Дьявола" id="Bridge" checked>
                       <label for="Bridge">Мост Дьявола</label>
@@ -159,7 +162,9 @@
                       <input class="visually-hidden user-rewiew__input user-rewiew__input--checkbox" type="checkbox" name="Гора Колокол" id="Mountain" checked>
                       <label for="Mountain">Гора Колокол</label>
                     </li>
-                    <li>
+                    </ul>
+                    <ul>
+                      <li>
                       <input class="visually-hidden user-rewiew__input user-rewiew__input--checkbox" type="checkbox" name="Слайд-парк" id="Park" checked>
                       <label for="Park">Слайд-парк</label>
                     </li>
@@ -168,6 +173,7 @@
                       <label for="Rocks">Красные скалы</label>
                     </li>
                   </ul>
+                </div>
                 </fieldset>
 
                 <fieldset class="user-rewiew__rewiew">
@@ -182,16 +188,24 @@
         </section>
 
         <section class="popup popup--succes">
-          <b class="popup__title">Ваш отзыв отправлен!</b>
+          <div class="popup__text">
+            <b class="popup__title">Ваш отзыв отправлен!</b>
           <p class="popup__description">Спасибо за ваше участие, Ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="popup__btn">
           <button class="btn" type="submit">Закрыть окно</button>
+          </div>
         </section>
 
         <section class="popup popup--failure">
-          <b class="popup__title">Что-то пошло не так!</b>
+          <div class="popup__text">
+            <b class="popup__title">Что-то пошло не так!</b>
           <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="btn" type="submit">Ок</button>
+          </div>
+          <div class="popup__btn">
+            <button class="btn" type="submit">Ок</button>
+            </div>
         </section>
 
       <footer class="page-footer">

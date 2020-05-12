@@ -1,5 +1,107 @@
-.user-rewiew {
+.user-rewiew__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-rewiew__form b {
   text-align: center;
+}
+
+.user-rewiew {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.user-rewiew__modal-login {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  order: 1;
+}
+
+.user-rewiew__contacts {
+  order: 2;
+}
+
+.user-rewiew__contacts p {
+  text-align: left;
+}
+
+.user-rewiew__contacts label {
+  display: block;
+  margin-bottom: 15px;
+  margin-left: 22px;
+}
+
+.user-rewiew__impression {
+  order: 3;
+}
+
+.user-rewiew__impression legend {
+  margin-bottom: 28px;
+}
+
+.user-rewiew__impression li {
+  text-align: left;
+  padding-left: 79px;
+  height: 57px;
+  margin-bottom: 15px;
+}
+
+.user-rewiew__impression label {
+  position: relative;
+}
+
+.user-rewiew__input--radio + label::before {
+  position: absolute;
+  top: -28px;
+  left: -56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  content: " ";
+  background: #f2f2f2;
+}
+
+.user-rewiew__input--radio:checked + label::after {
+  position: absolute;
+  top: -9px;
+  left: -37px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  content: "";
+  background: #333333;
+}
+
+.user-rewiew__attractions {
+  order: 4;
+}
+
+.user-rewiew__attractions label {
+  display: flex;
+  align-items: center;
+  height: 58px;
+  margin-left: 79px;
+}
+
+.user-rewiew__rewiew {
+  order: 5;
+}
+
+.user-rewiew__form button {
+  order: 6;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.user-rewiew__modal-login p {
+  display: flex;
+  align-items: center;
 }
 
 .user-rewiew ul {
@@ -40,6 +142,7 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-right: 15px;
 }
 
 .user-rewiew input,
@@ -50,6 +153,8 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  padding: 22px;
+  width: 100%;
 }
 
 .user-rewiew__impression label,
@@ -60,4 +165,131 @@
   font-weight: bold;
   text-transform: none;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .user-rewiew {
+    width: auto;
+  }
+
+  .user-rewiew__text {
+    width: 445px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user-rewiew__text .user-rewiew__title {
+    display: block;
+    font-size: 30px;
+    margin-top: 75px;
+    margin-bottom: 30px;
+  }
+
+  .user-rewiew__form b,
+  .user-rewiew__form legend {
+    font-size: 21px;
+  }
+
+  .user-rewiew__form form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-rewiew__impression {
+    width: 324px;
+    order: 0;
+    margin-left: auto;
+  }
+
+  .user-rewiew__modal-login {
+    width: 324px;
+    order: 1;
+    margin-right: auto;
+    text-align: right;
+  }
+
+  .user-rewiew__attractions .user-rewiew__columns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-rewiew__contacts,
+  .user-rewiew__attractions {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .user-rewiew__attractions li {
+    height: 57px;
+    margin: 0;
+  }
+
+  .user-rewiew__rewiew {
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-rewiew {
+    width: 960px;
+  }
+
+  .user-rewiew__contacts {
+    width: auto;
+  }
+
+  .user-rewiew__contacts-text {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+  }
+
+  .user-rewiew__contacts p {
+    width: 400px;
+    margin: 0;
+  }
+
+  .user-rewiew__impression,
+  .user-rewiew__modal-login {
+    width: 400px;
+  }
+
+  .user-rewiew__impression {
+    margin: 0;
+    padding: 0;
+    margin-right: 160px;
+  }
+
+  .user-rewiew__attractions .user-rewiew__columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .user-rewiew__columns ul {
+    display: flex;
+    flex-direction: row;
+    width: 480px;
+  }
+
+  .user-rewiew__columns ul:first-child {
+    justify-content: flex-start;
+  }
+
+  .user-rewiew__columns ul:last-child {
+    justify-content: flex-end;
+  }
+
+  .user-rewiew__rewiew {
+    width: 960px;
+  }
+
+  .popup--failure {
+    width: 400px;
+  }
+
+  .popup--succes {
+    width: 645px;
+  }
 }

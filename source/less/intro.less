@@ -3,14 +3,22 @@
   flex-direction: column;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: 720px auto;
-  height: auto;
   margin: 0 auto;
 }
 
 .intro__text {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 214px;
   text-align: center;
+  margin-top: 58px;
+  margin-bottom: 59px;
+}
+
+.intro__text--mini {
+  height: 39px;
+  margin-top: ;
+  margin-bottom: ;
 }
 
 .intro__img {
@@ -20,10 +28,13 @@
   height: 214px;
 }
 
+.intro__img--mini {
+  width: 229px;
+  height: 39px;
+}
+
 .intro__triangle {
-  margin: 0;
-  width: 1201px;
-  height: 57px;
+  width: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,8 +51,9 @@
 
   .intro__text {
     order: 2;
-
     width: 100%;
+    margin-top: 76px;
+    margin-bottom: 166px;
   }
 
   .intro__img {

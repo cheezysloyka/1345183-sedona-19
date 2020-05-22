@@ -7,9 +7,6 @@
   font-family: @font-1;
   background: @color-white;
   text-align: center;
-
-  /* Временно для сетки */
-  min-height: 570px;
 }
 
 .hotel__title {
@@ -17,12 +14,23 @@
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
+  margin-top: 25px;
 }
 
 .hotel__description {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 21px;
+  padding: 0 15px;
+}
+
+.hotel__search {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,5 +41,18 @@
   .hotel__title {
     font-size: 30px;
     line-height: 26px;
+    margin-top: 55px;
+  }
+
+  .hotel__description {
+    width: 437px;
+    margin: 0;
+    margin-top: 33px;
+  }
+
+  .hotel__search {
+    width: 460px;
+    margin-top: 40px;
+    margin-bottom: 57px;
   }
 }

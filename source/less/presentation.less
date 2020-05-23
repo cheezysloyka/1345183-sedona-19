@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 107px;
 }
 
 .presentation__title {
@@ -11,13 +12,18 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 31px;
 }
 
 .presentation__description {
+  width: 240px;
+  margin: 0 auto;
   font-family: @font-1;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 35px;
 }
 
 .presentation__player {
@@ -27,18 +33,23 @@
 .presentation__panel {
   position: absolute;
   margin: 0 auto;
-  bottom: 0;
+  bottom: -61px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .presentation__buttons ul {
+  box-sizing: border-box;
+  width: 280px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   list-style: none;
-  padding: 23px;
   margin: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  padding-left: 25px;
+  padding-right: 23px;
   background: #f2f2f2;
 }
 
@@ -47,6 +58,8 @@
   justify-content: center;
   align-items: center;
   border: none;
+  padding: 0;
+  margin: 0;
   fill: #5c6870;
   cursor: pointer;
 

@@ -1,8 +1,6 @@
 .reviews {
   width: auto;
   margin: 0 auto;
-  /* Временно для сетки */
-  min-height: 50px;
 }
 
 .reviews__list {
@@ -10,6 +8,33 @@
   flex-direction: column;
   align-content: center;
   margin: 0 auto;
+}
+
+.reviews__item {
+  margin: 0 auto;
+  width: 280px;
+  text-align: left;
+  border-bottom: 1px solid #d6d6d6;
+  margin-top: 23px;
+}
+
+.reviews__item img {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 10px;
+}
+
+.reviews__likes {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 7px;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+.reviews__likes svg {
+  margin-right: 15px;
 }
 
 @media (min-width: @tablet-width) {

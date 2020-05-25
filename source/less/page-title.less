@@ -1,8 +1,24 @@
 .page-title {
+  width: 320px;
   margin: 0 auto;
   background: @color-white;
   text-align: center;
   border-bottom: 1px solid #d6d6d6;
+  position: relative;
+}
+
+.page-title::before {
+  content: "";
+
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  z-index: 2;
+
+  width: 766px;
+  height: 37px;
+
+  background: url("../img/bg-triangle.svg") no-repeat;
 }
 
 .page-title__wrapper {
@@ -21,8 +37,8 @@
   line-height: 26px;
   font-weight: bold;
   margin: 0 9px;
-  margin-top: 41px;
-  margin-bottom: 27px;
+  margin-top: 31px;
+  margin-bottom: 28px;
 }
 
 .page-title__slogan--photo {
@@ -40,6 +56,7 @@
   line-height: 26px;
   font-weight: normal;
   margin: 0;
+  margin-bottom: 6px;
 }
 
 .page-title__intro--photo {
@@ -73,11 +90,11 @@
     line-height: 26px;
     margin: 0 auto;
     margin-top: 48px;
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 
   .page-title__intro {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 }
 
@@ -93,7 +110,6 @@
   }
 
   .page-title__slogan {
-    margin-top: 13px;
     margin-bottom: 30px;
   }
 

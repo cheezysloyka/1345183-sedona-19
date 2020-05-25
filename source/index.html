@@ -67,7 +67,11 @@
           </picture>
           </a>
 
-          <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" width="1201" height="57">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" width="1201" height="57">
+        </picture>
         </section>
 
 
@@ -127,7 +131,7 @@
 
           </div>
 
-          <div class="advantages__item">
+          <div class="advantages__item advantages__item--square">
             <div class="advantages__text">
               <h3 class="advantages__title">Небольшая площадь</h3>
             <strong>&ndash; №3 &ndash;</strong>
